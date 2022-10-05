@@ -1,0 +1,20 @@
+.file{
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.file:hover{
+    background-color: rgba(225, 225, 225, 0.845);
+    border-color: rgb(26, 255, 0);
+}
+
+.icon{
+    color: rgb(26, 255, 0);
+}
+
+.text{
+    display: inline-block;
+    margin-left: 5px;
+    color: black;
+}

@@ -1,0 +1,20 @@
+.folder{
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.folder:hover{
+    background-color: rgba(225, 225, 225, 0.845);
+    border-color: rgb(255, 174, 0);
+}
+
+.icon{
+    color: rgb(255, 174, 0);
+}
+
+.text{
+    display: inline-block;
+    margin-left: 5px;
+    color: black;
+}

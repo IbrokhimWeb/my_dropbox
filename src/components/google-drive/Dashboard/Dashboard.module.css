@@ -1,0 +1,13 @@
+.block{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px 0 ;
+}
+
+.block > div{
+    gap: 20px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,42 @@
+.file {
+    /* margin-top: 10px; */
+    padding: 15px 20px;
+    color: red;
+    border: 1px solid blue;
+    border-radius: 100px;
+}
+
+.icon {
+    color: blue;
+}
+
+.upload {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    max-width: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.20);
+}
+
+.hidden {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.sucses {
+    color: white;
+    text-align: center;
+    border-radius: 100px;
+    background-color: green;
+    padding: 0 20px;
+}
+
+.error {
+    color: white;
+    text-align: center;
+    border-radius: 100px;
+    background-color: red;
+    padding: 0 20px;
+}

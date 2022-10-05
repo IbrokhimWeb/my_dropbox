@@ -1,0 +1,49 @@
+.card{
+    background-color: #ffffff;
+    box-shadow: 0 0 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0px 20px rgba(0,0,0,0.20);
+    padding: 40px;
+}
+
+.signUp{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.email, .password{
+    width: 100%;
+    padding: 10px 20px;
+    display: block;
+    outline: none;
+    border: none;
+    box-shadow: 0 0px 20px rgba(0,0,0,0.20);
+    border-radius:8px ;
+}
+
+.button{
+    margin-top: 30px;
+    width: 100%;
+    display: block;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    box-shadow: 0 0px 20px rgba(0,0,0,0.20);
+
+}
+
+.log__in{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.logIn{
+    text-decoration: none;
+    color: blue;
+}

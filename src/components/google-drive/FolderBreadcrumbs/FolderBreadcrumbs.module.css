@@ -1,0 +1,36 @@
+.flex{
+    display: flex;
+}
+
+.inline {
+    display: inline-block;
+    margin-right: 5px;
+    text-decoration: none;
+    font-style: none;
+}
+
+.route{
+    /* width: 100vh; */
+}
+
+.route > li{
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.route > li > a{
+    color: blue;
+    text-decoration: none;
+}
+
+.route > li::after{
+    position: absolute;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 0.5rem;
+    color: #6c757d;
+    content: "/";
+}
+
