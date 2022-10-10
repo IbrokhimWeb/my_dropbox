@@ -27,7 +27,7 @@ export default function AddFileButton({ currentFolder }) {
     const { currentUser } = useAuth()
 
     function handleUpload(e) {
-        const file = e.target.files[0]
+        const file = e.target.files[0];
         if (currentFolder == null || file == null) return
 
         const id = uuidV4()
@@ -39,6 +39,8 @@ export default function AddFileButton({ currentFolder }) {
             currentFolder === ROOT_FOLDER
                 ? `${currentFolder.path.join("/")}/${file.name}`
                 : `${currentFolder.path.join("/")}/${currentFolder.name}/${file.name}`
+
+        
 
         const uploadTask = storage
             .ref(`/files/${currentUser.uid}/${filePath}`)
@@ -83,7 +85,8 @@ export default function AddFileButton({ currentFolder }) {
                         .get()
                         .then(existingFiles => {
                             const existingFile = existingFiles.docs[0]
-                            if (existingFile) {
+                            console.log(existingFile)
+                            if (existingFile?.exists) {
                                 existingFile.ref.update({ url: url })
                             } else {
                                 database.files.add({
@@ -94,6 +97,7 @@ export default function AddFileButton({ currentFolder }) {
                                     userId: currentUser.uid,
                                 })
                             }
+                            setUploadingFiles([])
                         })
                 })
             }

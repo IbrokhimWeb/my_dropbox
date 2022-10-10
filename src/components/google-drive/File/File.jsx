@@ -15,7 +15,7 @@ export default function File({ file }) {
             className={s.file}
         >
             <FontAwesomeIcon icon={faFile} className={s.icon} />
-            <p className={s.text}>{file.name.length > 20 ? 'file' : file.name}</p>
+            <p className={s.text}>{file.name}</p>
         </a>
     )
 }
